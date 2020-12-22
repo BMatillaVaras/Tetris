@@ -69,9 +69,16 @@ const theTetrominoes = [
 ];
 
 let currentPosition = 4;
-let current = theTetrominoes[0][0];
+let currentRotation = 0;
 
-//draw the first rotation in the first tetromino
+//randomly select a tetromino and its first rotation
+
+let random = Math.floor(Math.random() * theTetrominoes.length);
+console.log(random);
+
+let current = theTetrominoes[random][0];
+
+//draw the tetromino
 
 function draw() {
   current.forEach((index) => {
