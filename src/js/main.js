@@ -180,7 +180,7 @@ function moveRight() {
   draw();
 }
 
-// rotate te tetromino
+// rotate the tetromino
 
 function rotate() {
   undraw();
@@ -192,3 +192,13 @@ function rotate() {
   current = theTetrominoes[random][currentRotation];
   draw;
 }
+
+//show up-next tetromino in mini-grid display
+
+const displaySquares = document.querySelectorAll(".mini-grid div");
+const displayWidth = 4;
+let displayIndex = 0;
+
+//the tetrominoes without rotations
+
+const upNextTetrominoes = [];
