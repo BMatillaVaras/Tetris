@@ -6,6 +6,10 @@
 @import "layout/footer";
 @import "pages/index";
 
+.game-section {
+  display: flex;
+}
+
 .grid {
   width: 200px;
   height: 400px;
@@ -21,4 +25,18 @@
 
 .tetromino {
   background-color: blue;
+}
+
+.mini-grid {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+  margin-left: 50px;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
 }
