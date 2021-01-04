@@ -1,0 +1,14 @@
+.header {
+  height: 70px;
+  font-family: "Press Start 2P", cursive;
+  color: grey;
+  display: flex;
+  align-items: center;
+  @media all and (min-width: 1280px) {
+    height: 90px;
+  }
+  &__title {
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+}
