@@ -1,0 +1,32 @@
+.footer {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  &__nav {
+    list-style: none;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+      width: 100px;
+    }
+  }
+}
