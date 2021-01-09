@@ -1,32 +1,29 @@
 .footer {
-  height: 60px;
+  height: 80px;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   color: grey;
-  @media all and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100vw;
-  }
+  border-top: 1px solid grey;
   &__title {
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    @media all and (min-width: 768px) {
-      font-size: 20px;
-    }
+    font-size: 20px;
   }
   &__nav {
+    width: 80px;
     list-style: none;
     width: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
-    @media all and (min-width: 768px) {
-      font-size: 20px;
-      width: 100px;
+    font-size: 20px;
+    &--anchor {
+      text-decoration: none;
+      .icon {
+        color: grey;
+      }
     }
   }
 }
