@@ -10,13 +10,13 @@ let nextRandom = 0;
 let timerId;
 let score = 0;
 const colors = [
-  "darkBlue",
+  "rgb(86, 212, 191)",
   "orange",
   "red",
   "green",
   "pink",
   "purple",
-  "lightBlue",
+  "rgb(160, 129, 248)",
 ];
 
 // The tetrominoes
