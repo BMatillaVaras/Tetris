@@ -1,0 +1,12 @@
+.header {
+  height: 110px;
+  font-family: "Press Start 2P", cursive;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+}
